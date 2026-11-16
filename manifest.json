@@ -1,0 +1,18 @@
+{
+  "name": "ASTRA 365",
+  "short_name": "ASTRA 365",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8fc",
+  "theme_color": "#6957e8",
+  "description": "Your all-in-one productivity workspace",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

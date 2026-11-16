@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6654e8"><meta name="description" content="ASTRA 365 — Your all-in-one productivity workspace">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg">
+<title>ASTRA 365</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="#"><span class="brand-mark">A</span><span>ASTRA <b>365</b><small>WORKSPACE</small></span></a>
+  <button class="new-btn" onclick="newDocument()">＋ Create new</button>
+  <div class="nav-label">WORKSPACE</div>
+  <nav id="nav">
+    <button class="nav-item active" data-app="home"><span>⌂</span> Home</button>
+    <button class="nav-item" data-app="docs"><span>▤</span> ASTRA Docs</button>
+    <button class="nav-item" data-app="sheets"><span>▦</span> ASTRA Sheets</button>
+    <button class="nav-item" data-app="slides"><span>▣</span> ASTRA Slides</button>
+    <button class="nav-item" data-app="pdf"><span>▧</span> ASTRA PDF</button>
+    <button class="nav-item" data-app="drive"><span>◫</span> ASTRA Drive</button>
+    <div class="nav-label">ORGANIZE</div>
+    <button class="nav-item" data-app="notes"><span>✎</span> Notes</button>
+    <button class="nav-item" data-app="calendar"><span>▦</span> Calendar</button>
+    <button class="nav-item" data-app="tasks"><span>✓</span> Tasks</button>
+    <button class="nav-item" data-app="forms"><span>☷</span> Forms</button>
+    <button class="nav-item" data-app="chat"><span>◌</span> Chat</button>
+    <button class="nav-item" data-app="board"><span>▧</span> Board</button>
+  </nav>
+  <div class="sidebar-bottom"><div class="storage"><span>Local workspace</span><b>On this device</b><small>Your files stay in this browser.</small></div><button class="nav-item" onclick="installApp()">⇩ Install ASTRA 365</button></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="mobile-menu" onclick="document.getElementById('sidebar').classList.toggle('show')">☰</button><div class="crumb" id="crumb">Workspace / Home</div><div class="top-actions"><span class="status"><i></i> All changes saved locally</span><button class="avatar" title="Profile">RC</button></div></header>
+<section id="view" class="view"></section>
+</main>
+</div>
+<script src="app.js"></script>
+</body></html>
